@@ -84,8 +84,8 @@ local function RevokeProperty(citizenId, propertyId)
                 DebugPrint("Successfully removed property " .. propertyId .. " from citizen " .. citizenId)
                 
                 -- Broadcast property update to all clients
-                TriggerClientEvent("ps-housing:client:updateProperty", -1, "UpdateOwner", propertyId, nil)
-                TriggerClientEvent("ps-housing:client:updateProperty", -1, "UpdateForSale", propertyId, 1)
+                TriggerClientEvent("p-manager:client:updateProperty", -1, "UpdateOwner", propertyId, nil)
+                TriggerClientEvent("p-manager:client:updateProperty", -1, "UpdateForSale", propertyId, 1)
                 
                 -- Find player if online to notify them
                 local player = QBCore.Functions.GetPlayerByCitizenId(citizenId)
