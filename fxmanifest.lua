@@ -1,7 +1,8 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'QBCore Community'
+author 'Pixly Games'
+
 description 'NFT Checker - Verifies NFT ownership and revokes assets when NFTs are no longer owned'
 version '1.0.0'
 
